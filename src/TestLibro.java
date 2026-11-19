@@ -1,7 +1,3 @@
-
-import java.util.HashSet;
-import java.util.HashMap;
-
 public class TestLibro {
 
     public static void main(String[] args) {
