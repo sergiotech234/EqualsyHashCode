@@ -27,5 +27,8 @@ public class TestLibro {
 
         // Un objeto siempre es igual a sí mismo.
         System.out.println("equals consigo mismo: " + libro1.equals(libro1));
+         
+        System.out.println("hashCode : "+libro1.hashCode());
+        System.out.println("hashCode: "+libro2.hashCode());
     }
 }
