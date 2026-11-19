@@ -7,8 +7,8 @@ public class TestLibro {
     public static void main(String[] args) {
 
         // Creamos dos libros con los mismos datos.
-        Libro libro1 = new Libro("Don Quijote", "Cervantes", 1605);
-        Libro libro2 = new Libro("Don Quijote", "Cervantes", 1605);
+        Libro libro1 = new Libro("El lazarillo de tormes", "Anonimo", 1605);
+        Libro libro2 = new Libro("El lazarillo de tormes", "Anonimo", 1605);
 
         // COMPARACIÓN == Y equals()
 
