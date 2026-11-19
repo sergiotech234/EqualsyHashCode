@@ -31,50 +31,5 @@ public class TestLibro {
 
         // Un objeto siempre es igual a sí mismo.
         System.out.println("equals consigo mismo: " + libro1.equals(libro1));
-
-
-        // HASHSET
-
-        // HashSet no permite elementos duplicados.
-        HashSet<Libro> conjunto = new HashSet<>();
-
-        conjunto.add(libro1);
-        conjunto.add(libro2);
-
-        // El resultado debe ser 1 porque los libros son iguales.
-        System.out.println("Tamaño del HashSet: " + conjunto.size());
-
-
-        // HASHMAP
-
-        // El valor Integer representa los ejemplares disponibles.
-        HashMap<Libro, Integer> mapa = new HashMap<>();
-
-        // Guardamos el libro1 con 10 ejemplares disponibles.
-        mapa.put(libro1, 10);
-
-        // Recuperamos el valor utilizando libro2.
-        // Devuelve 10 porque libro1 y libro2 son iguales.
-        System.out.println("Ejemplares disponibles: " + mapa.get(libro2));
-
-
-        // PRUEBA SIN HASHCODE()
-
-        /*
-         * Si comentamos o eliminamos el método hashCode()
-         * de la clase Libro, Java utilizará el hashCode()
-         * heredado de Object.
-         *
-         * Aunque equals() indique que los libros son iguales,
-         * pueden tener códigos hash diferentes.
-         *
-         * Por tanto, normalmente:
-         *
-         * HashSet tendrá tamaño 2.
-         * HashMap devolverá null al buscar libro2.
-         *
-         * Esto demuestra que debemos sobrescribir equals()
-         * y hashCode() conjuntamente.
-         */
     }
 }
